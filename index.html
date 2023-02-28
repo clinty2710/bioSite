@@ -10,7 +10,7 @@ steadman_LandingPage_bioSite.html
 <html lang="en">
     <head>
         <title>Kevin Meza</title>
-        <meta name="description" content="Mod 8 assignment for CSD 340 HTML and CSS">
+        <meta name="description" content="bioSite Project for CSD 340 HTML and CSS">
         <meta name="author" content="Clint Steadman">
         <meta name="pragma" content="no-cache">
         <meta name="keywords" content="HTML, CSS, CSD-340, bioSite">
@@ -26,7 +26,7 @@ steadman_LandingPage_bioSite.html
                     <h1>Kevin Meza</h1>
                 </div>
                 <div id="subtitle">
-                    <h2>A Really Cool Dude</h2>
+                    <h2>An Effervescent Wonder</h2>
                 </div>
             </header>
             <ul id="navbar">
@@ -36,9 +36,9 @@ steadman_LandingPage_bioSite.html
             </ul>
             <div class="summary">
                 <p> Kevin is a good friend of mine. He&#39s always happy and loves to feel the energy of those around him. 
-                    He loves passion - in whatever sense it is! He's said, “I love seeing the fire behind someone&#39s eyes! 
+                    He loves passion - in whatever sense it is! He's said, <q>I love seeing the fire behind someone&#39s eyes! 
                     When someone talks passionately about their favorite subject, their whole demeanor changes. 
-                    Everything lights up and becomes that much more important…”, and that&#39s also what you always get when 
+                    Everything lights up and becomes that much more important&#8230</q>, and that&#39s also what you always get when 
                     conversing with him.
                 </p>
                 <p> We are fellow performers and we both met working at Walt Disney World. We quickly 
@@ -48,34 +48,53 @@ steadman_LandingPage_bioSite.html
                     The Legend of Zelda, especially the title character. Princess Zelda speaks to his inner princess. 
                     Not only does he resonate with Princess Zelda, he&#39s a fan of Princess Peach from Super Mario Bros. and 
                     Sailor Moon.  The Logo for his Photography business has a yellow moon in it which is a nod to Sailor Moon. 
-                    Speaking of, he continues his love for seeing “fire behind someone&#39s eyes” by capturing it in photos.
+                    Speaking of, he continues his love for seeing <q>fire behind someone&#39s eyes</q> by capturing it in photos.
                 </p>
                 <p> Not only does he work as a full-time performer and go to school, He continues to progress in his photography 
                     skills. Kevin is a wonderful friend and all around awesome, fun and loving person. 
                     I&#39m blessed to have him as my friend.
                 </p>
             </div>
-            <div id="image-gallery">
-                <div class="grid-item">
-                    <h3>School</h3>
-                    <figure>
-                        <img id="bellevue" src="bioSite_images/bellevue_trans.PNG" alt="Bellevue University Logo">
-                        <figcaption>Bellevue University Online Classes</figcaption>
-                    </figure>
-                </div>
-                <div class="grid-item">
-                    <h3>Work</h3>
-                    <figure>
-                        <img id="disney" src="bioSite_images/disney_company_logo.png" alt="The Walt Disney Company Logo">
-                        <figcaption>Character Performer at Disney World</figcaption>                        
-                    </figure>
-                </div>
-                <div class="grid-item">
-                    <h3>Friends</h3>
-                    <figure>
-                        <img id="friend" src="bioSite_images/kevin_annie.jpg" alt="Kevin and his Friend, Annie">
-                         <figcaption>Kevin's Longtime friend, Annie</figcaption>
-                    </figure>
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slides">
+                    <div id="slide_1" class="slide">
+                      <span class="slide_text">One of Kevin's Hobbies</span>
+                      <img src="bioSite_images/kevin_camera.jpg" alt="Kevin Holding a Camera">
+                      <a class="prev" href="#slide_6" title="Prev"></a>
+                      <a class="next" href="#slide_2" title="Next"></a>
+                    </div>
+                    <div id="slide_2" class="slide">
+                      <span class="slide_text">Bellevue University Online Classes</span>
+                      <img src="bioSite_images/bu-seal.jpg" alt="Bellevue University Logo">
+                      <a class="prev" href="#slide_1" title="Prev"></a>
+                      <a class="next" href="#slide_3" title="Next"></a>
+                    </div>
+                    <div id="slide_3" class="slide">
+                      <span class="slide_text">Kevin's Longtime Friend, Annie</span>
+                      <img src="bioSite_images/kevin_annie.jpg" alt="Kevin and Annie">
+                      <a class="prev" href="#slide_2" title="Prev"></a>
+                      <a class="next" href="#slide_4" title="Next"></a>
+                    </div>
+                    <div id="slide_4" class="slide">
+                        <span class="slide_text">Character Performer at Disney World</span>
+                        <img src="bioSite_images/disney_world.png" alt="Disney World Logo">
+                        <a class="prev" href="#slide_3" title="Prev"></a>
+                        <a class="next" href="#slide_5" title="Next"></a>
+                    </div>
+                    <div id="slide_5" class="slide">
+                        <span class="slide_text">Kevin and His Coworker, SK-620</span>
+                        <img src="bioSite_images/kevin_SK.jpg" alt="Kevin and SK">
+                        <a class="prev" href="#slide_4" title="Prev"></a>
+                        <a class="next" href="#slide_6" title="Next"></a>
+                    </div>
+                    <div id="slide_6" class="slide">
+                        <span class="slide_text">Kevin's Aspiring Photography Business </span>
+                        <img src="bioSite_images/km_photography.png" alt="Photography Logo">
+                        <a class="prev" href="#slide_5" title="Prev"></a>
+                        <a class="next" href="#slide_1" title="Next"></a>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
