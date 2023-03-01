@@ -1,7 +1,7 @@
 /*
 Clint Steadman
-Mod 12.2 assignment
-3/1/23
+Mod 8 assignment
+2/21/23
 CSD340 bioSite
 site.css
 */
@@ -68,7 +68,7 @@ p {
 }
 
 .summary {
-    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 75%;
     min-width: fit-content;
@@ -213,8 +213,7 @@ figcaption {
     padding: 5px;
 }
 
-/* Slider - 
-effect provided by https://dev.to/shantanu_jana/automatic-image-slideshow-in-html-css-26jl*/
+/* Slider */
 
 .slider-container {
     display: flex;
@@ -258,11 +257,75 @@ effect provided by https://dev.to/shantanu_jana/automatic-image-slideshow-in-htm
     transform: scale(1)
   }
 
+  .slide_text {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 90px;
+    font-family: 'Montserrat', sans-serif;
+    color: #E090AD;
+  }
+
+  .slider::before,a.prev {
+    transform: rotate(135deg); left:2% 
+  } 
+
+  .slider::after,a.next {
+    transform: rotate(-45deg); right:2% 
+  } 
+
+  .next,.prev,.slider::after,.slider::before {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    border: solid #E090AD;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box 
+  }
+
+  .slider::after,.slider::before {
+    z-index: 1;
+    background: 0 0;
+    pointer-events: none
+  } 
+
   .slide img{
     height: 400px;
     width: 400px
   }
 
+  @media only screen and (max-width:680px){
+    .slider{
+      max-width: 80%;
+      height: 250px;
+      margin: 20px
+    }
+
+    .slide{
+      height: 250px
+    }
+
+    .slide img{
+      height: 250px;
+      width: 200px
+    }
+
+    .slide_text{
+      font-size: 18px;
+      padding: 50px
+    }
+
+    .slider_nav{
+      width: 150px;
+      margin-left: -75px
+    }
+
+    .next,.prev,.slider::after,.slider::before{
+      width: 15px;
+      height: 15px
+    }
+}
 
 .auto_container{
     max-width: 900px;
