@@ -213,7 +213,8 @@ figcaption {
     padding: 5px;
 }
 
-/* Slider */
+/* Slider -
+effect provided by: https://dev.to/shantanu_jana/automatic-image-slideshow-in-html-css-26jl*/
 
 .slider-container {
     display: flex;
