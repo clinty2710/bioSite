@@ -99,7 +99,7 @@ footer a {
     text-shadow: 2px 2px 2px #006255;
 }
 
-#section_title {
+#section_title1, #section_title2, #section_title3 {
     margin: 10px auto 10px auto;
     padding: 10px;
     padding-top: 0%;
@@ -120,7 +120,7 @@ h4 {
 }
 
 /* Images */
-#image-gallery {
+#image-gallery1, #image-gallery2, #image-gallery3 {
     margin-top: 0;
     margin-bottom: 10%;
     display: grid;
